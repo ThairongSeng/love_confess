@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@700&family=Inter:wght@500&family=League+Spartan:wght@500&family=Poppins&family=Ubuntu:wght@500&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+*{
+    color: #01497c;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+.nav{
+    position: sticky;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 50px;
+    background: #fff;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.2) inset;
+}
+.navlist{
+    display: flex;
+}
+.navlist li a{
+    font-size: 17px;
+    margin: 0 25px;
+    position: relative;
+}
+.navlist li a::before{
+    content: '';
+    position: absolute;
+    background: #01497c;
+    left: 0;
+    bottom: -3px;
+    height: 2px ;
+    width: 0%;
+    transition: .2s ease;
+}
+.navlist li a:hover:before{
+    width: 100%;
+
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.nav-icons a i{
+    font-size: 22px;
+    margin: 0 10px ;
+}
+
+.container{
+    max-width: 95%;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+}
+.flex{
+    flex-wrap: wrap;
+}
+.flex>*{
+    flex: 1 1 25em;
+}
+.column{
+    display: grid;
+}
+h4{
+    font-size: 19px;
+}
+h6{
+    font-size: 16px;
+}
+h1{
+    font-size: 41px;
+    line-height: 41px;
+}
+h2{
+    font-size: 35px;
+    line-height: 35px;
+}
+p{
+    font-size: 16px;
+    line-height: 20px;
+    padding: 20px 0 30px;
+}
+
+.home{
+    background: rgba(192, 230, 255, 0.8);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.home-img{
+    justify-content: center;
+}
+.home-img img{
+    max-height: 500px;
+    object-fit: contain;
+}
